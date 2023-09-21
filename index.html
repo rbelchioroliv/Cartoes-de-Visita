@@ -4,8 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Cartões de Visita/estilo/style.css">
+    <link rel="stylesheet" href="./estilo/style.css">
     <link rel="stylesheet" media="screen and (max-width: 768px)" type="text/css" href="mobile.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <title>Modelo NFC</title>
 </head>
 
@@ -14,15 +19,16 @@
 
     <div class="container">
         <div class="logo">
-            <img src="./Cartões de Visita/logo-preta.png" alt="logo">
+            <img src="logo-preta.png" alt="logo">
         </div>
     </div>
 
     <div class="centered-container">
         <div class="angendaLocal">
             <input type="button" value="📞Agende Horário"><br>
-            <input type="button" value="🗺️Como Chegar">
+            <input id="mapButton" type="button" value="🗺️Como Chegar" onclick="exibirMapa()">
         </div>
+        <div id="map" class="map-container"></div>
     </div>
     <!-- <div class="contato">
         <ul>
@@ -32,25 +38,34 @@
             <li><a href="">Telegram</a></li>
         </ul>
     </div>-->
-    <a href="https://www.instagram.com/_r_e_n_a_n__/?text=Sua mensagem aqui" target="_blank"><img
-            src="https://cdn-icons-png.flaticon.com/128/725/725339.png" alt="Instagram" srcset=""></a>
-    <a href="https://web.whatsapp.com/" target="_blank"><img
-            src="https://cdn-icons-png.flaticon.com/128/1383/1383336.png" alt="Whatsapp" srcset=""></a>
-    <a href="https://web.telegram.org/a/" target="_blank"><img
-            src="https://cdn-icons-png.flaticon.com/128/408/408839.png" alt="Telegram" srcset=""></a>
-    <h2>Fale Conosco</h2>
-<div class="interagir">
-            <h3>
-                CLIQUE NOS ÍCONES PARA INTERAGIR
-            </h3>
+
+    <div class="social">
+        <div class="socialInt">
+            <a href="https://www.instagram.com/_r_e_n_a_n__/?text=Sua mensagem aqui" target="_blank"><img
+                    src="https://cdn-icons-png.flaticon.com/128/725/725339.png" alt="Instagram" srcset=""></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><img
+                    src="https://cdn-icons-png.flaticon.com/128/1383/1383336.png" alt="Whatsapp" srcset=""></a>
+            <a href="https://web.telegram.org/a/" target="_blank"><img
+                    src="https://cdn-icons-png.flaticon.com/128/408/408839.png" alt="Telegram" srcset=""></a>
         </div>
+    </div>
+    <div class="interagir">
+
+
+        <h3>
+            CLIQUE NOS ÍCONES PARA INTERAGIR
+        </h3>
+    </div>
     <p>Entre em contato conosco para obter mais informações.</p>
     </section>
-    <footer>
-        <p>&copy; 2023 Meu Site Responsivo</p>
 
-        
+
+    <script src="./script/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=SUA_CHAVE_DE_API&callback=initMap" async defer></script>
 
 </body>
+<footer>
+    <p>&copy; 2023 Meu Site Responsivo</p>
+</footer>
 
 </html>
