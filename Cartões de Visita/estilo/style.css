@@ -61,3 +61,30 @@ input[type="button"] {
 input[type="button"]:hover {
     background-color: #0056b3;
 }
+
+#map { 
+    height: 180px;
+}
+.map-container {
+    display: none;
+}
+
+.socials{
+    display: inline;
+    align-items: center;
+}
+
+.social a img{
+    width: 20%;
+    transition: width 0.3s;
+}
+
+.social a img:hover{
+    width: 22%;
+}
+
+.socialInt{
+    margin: 0;
+    margin-left: 26%;
+}
+
