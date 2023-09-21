@@ -1,0 +1,63 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: inline-block;
+    background: fixed;
+    background-color: rgb(94, 100, 100);
+    background-image: url('https://img.freepik.com/vetores-gratis/fundo-geometrico-cinza-elegante_1035-13312.jpg');
+    background-size: cover;
+    /* Para cobrir todo o espaço do body */
+    background-position: center;
+    /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    /* Evita repetição da imagem */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+    margin-top: 10px;
+
+}
+
+.logo {
+
+    margin-right: 55px;
+    margin-left: 50.203;
+    margin-left: 50px;
+}
+
+.logo img {
+    width: 250px;
+}
+
+
+.centered-container {
+    text-align: center;
+}
+
+.angendaLocal {
+    padding: 20px;
+    padding-top: 0px;
+    border-radius: 10px;
+}
+
+input[type="button"] {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+}
+
+input[type="button"]:hover {
+    background-color: #0056b3;
+}
