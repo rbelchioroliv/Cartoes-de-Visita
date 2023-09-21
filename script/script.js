@@ -15,7 +15,7 @@ function exibirMapa() {
         mapContainer.style.display = 'none'; // Esconde a div do mapa
     } else {
         // Se o mapa não estiver sendo exibido, crie-o
-        map = L.map('map').setView([-22.931092847989774, -48.46115529820424], 13);
+        map = L.map('map').setView([-22.931092847989774, -48.46115529820424], 24);
 
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
