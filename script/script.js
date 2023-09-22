@@ -32,3 +32,36 @@ function exibirMapa() {
     }
 }
 
+//FORMULARIO DE AGENDAMENTO\\
+
+function exibirPopup() {
+    const popup = document.getElementById('popup');
+    popup.style.display = 'block';
+}
+
+function enviarForm() {
+    const nome = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
+    const telefone = document.getElementById('telefone').value;
+    const descricao = document.getElementById('descricao').value;
+    const mensagemAgradecimento = document.getElementById('mensagemAgradecimento');
+    const recarregarButton = document.getElementById('recarregarButton');
+    const agendarForm = document.getElementById('agendarForm');
+    
+
+    // Aqui você pode enviar os dados do formulário para o servidor (por exemplo, usando AJAX).
+    // Vou apenas simular o envio de dados com um atraso de 2 segundos.
+    setTimeout(function () {
+        agendarForm.style.display = 'none'; // Esconde o formulário
+        mensagemAgradecimento.style.display = 'block'; // Mostra a mensagem de agradecimento
+        mensagemAgradecimento.textContent = `Logo retornaremos o seu contato, ${nome}! 😉`;
+        recarregarButton.style.display = 'block'; // Mostra o botão de recarregar
+    }, 100);
+
+    return false; // Retorna false para evitar o envio padrão do formulário
+}
+
+function recarregarPagina() {
+    location.reload(); // Recarrega a página
+}
+
