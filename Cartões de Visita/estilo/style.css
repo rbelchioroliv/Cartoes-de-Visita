@@ -70,6 +70,20 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.enviar{
+    border-radius: 8px;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 95%;
+    font-family:'Times New Roman', Times, serif ;
+    transition: 1s;
+}
+
+.enviar:hover{
+    scale: 110%;
+    background-color: #0362c7;
+}
+
 #recarregarButton{
     display: none;
 
