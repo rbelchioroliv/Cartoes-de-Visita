@@ -37,6 +37,16 @@ function exibirMapa() {
 function exibirPopup() {
     const popup = document.getElementById('popup');
     popup.style.display = 'block';
+
+    // Verifique se o mapa está atualmente visível e, se estiver, oculte-o
+    if (mapaExibido) {
+        if (map) {
+            map.remove();
+        }
+        mapaExibido = false;
+        mapButton.value = '🗺️Como Chegar'; // Altera o texto do botão
+        mapContainer.style.display = 'none'; // Esconde a div do mapa
+    }
 }
 
 function enviarForm() {
@@ -47,7 +57,7 @@ function enviarForm() {
     const mensagemAgradecimento = document.getElementById('mensagemAgradecimento');
     const recarregarButton = document.getElementById('recarregarButton');
     const agendarForm = document.getElementById('agendarForm');
-    
+
 
     // Aqui você pode enviar os dados do formulário para o servidor (por exemplo, usando AJAX).
     // Vou apenas simular o envio de dados com um atraso de 2 segundos.
