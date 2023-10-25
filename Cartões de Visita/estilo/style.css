@@ -72,7 +72,7 @@ body {
 
 .enviar {
     border-radius: 8px;
-    background-color: #007BFF;
+    background-color: #535353;
     color: #fff;
     font-size: 95%;
     font-family: 'Times New Roman', Times, serif;
@@ -81,7 +81,7 @@ body {
 
 .enviar:hover {
     scale: 110%;
-    background-color: #0362c7;
+    background-color: #2d2d2d;
 }
 
 #recarregarButton {
@@ -91,7 +91,7 @@ body {
     width: 89%;
     border-radius: 10px;
     margin-left: 9px;
-    background-color: #007BFF;
+    background-color: #535353;
 
     color: #fff;
     font-size: 95%;
@@ -101,7 +101,7 @@ body {
 
 #recarregarButton:hover {
     scale: 110%;
-    background-color: #0362c7;
+    background-color: #2d2d2d;
 }
 
 .mensagemAgradecimento {
@@ -119,13 +119,13 @@ input[type="button"] {
     margin: 5px;
     cursor: pointer;
     border: none;
-    background-color: #007BFF;
+    background-color: #535353;
     color: #fff;
     border-radius: 5px;
 }
 
 input[type="button"]:hover {
-    background-color: #0056b3;
+    background-color: #2d2d2d;
 }
 
 #map {
@@ -156,9 +156,22 @@ input[type="button"]:hover {
     margin-left: 26%;
 }
 
+.interagir{
+    font-size: 15px;
+    text-align: center;
+    
+}
+.interagir p{
+    font-size: 15px;
+    text-align: center;
+    
+}
+
+
 footer {
     width: 157px;
     margin-left: 25%;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
