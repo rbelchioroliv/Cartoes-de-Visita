@@ -159,6 +159,7 @@ input[type="button"]:hover {
 .interagir{
     font-size: 15px;
     text-align: center;
+    margin-bottom: 148px; /* Add margin to create space for the footer */
     
 }
 .interagir p{
@@ -172,6 +173,9 @@ footer {
     width: 157px;
     margin-left: 25%;
     text-align: center;
+    position: inline fixed;
+    bottom: 0;
+    
 }
 
 @media (max-width: 768px) {
